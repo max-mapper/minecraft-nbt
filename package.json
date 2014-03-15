@@ -4,10 +4,10 @@
   "description": "named binary tag (minecraft) parser in pure js",
   "main": "index.js",
   "scripts": {},
-  "repository": "",
+  "repository": "https://github.com/maxogden/minecraft-nbt",
   "author": "Jason Livesay <ithkuil@gmail.com>, Max Ogden <max@maxogden.com>",
   "license": "BSD",
   "dependencies": {
-    "jDataView": "~1.1.0"
+    "jdataview": "^2.4.5"
   }
 }
