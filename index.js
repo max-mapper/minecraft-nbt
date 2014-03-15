@@ -367,7 +367,7 @@ var dataview = require('jdataview');
     };
 
     NBTReader.prototype.getString = function(length) {
-      return this.dataview.getString.call(this.dataview, length);
+      return this.dataview.getString.call(this.dataview, length, undefined, 'utf8');
     };
 
     NBTReader.prototype.read = function(typespec) {
