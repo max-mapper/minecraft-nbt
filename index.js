@@ -193,7 +193,7 @@ var dataview = require('jdataview');
     }
 
     TAG_Long.prototype.read = function() {
-      return this.reader.getFloat64();
+      return this.reader.getInt64();
     };
 
     return TAG_Long;
@@ -324,6 +324,7 @@ var dataview = require('jdataview');
       this.getInt32 = __bind(this.getInt32, this);
       this.getInt16 = __bind(this.getInt16, this);
       this.getFloat64 = __bind(this.getFloat64, this);
+      this.getInt64 = __bind(this.getInt64, this);
       this.getFloat32 = __bind(this.getFloat32, this);
       this.getInt8 = __bind(this.getInt8, this);
       this.getUint8 = __bind(this.getUint8, this);
@@ -351,6 +352,11 @@ var dataview = require('jdataview');
     NBTReader.prototype.getFloat64 = function() {
       return this.dataview.getFloat64.call(this.dataview);
     };
+
+    NBTReader.prototype.getInt64 = function() {
+      return this.dataview.getInt64.call(this.dataview);
+    };
+
 
     NBTReader.prototype.getInt16 = function() {
       return this.dataview.getInt16.call(this.dataview);
