@@ -1,6 +1,6 @@
 {
   "name": "minecraft-nbt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "named binary tag (minecraft) parser in pure js",
   "main": "index.js",
   "scripts": {},
